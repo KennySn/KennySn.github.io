@@ -1,0 +1,54 @@
+/* Configuración general del cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #36393f; /* Color de fondo general como en Discord */
+    color: #ffffff; /* Color de texto principal */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+/* Estilos para el botón */
+button {
+    background-color: #5865f2; /* Color azul de Discord */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4e5dcf; /* Oscurecer el botón al pasar el cursor */
+}
+
+button:disabled {
+    background-color: #4e5dcf;
+    cursor: not-allowed;
+}
+
+/* Estilos para el contenedor de la velocidad */
+#speedContainer {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #42454a; /* Bordes sutiles */
+    background-color: #2f3136; /* Fondo oscuro para el contenedor */
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative; /* Posición relativa para el contenedor */
+}
+
+/* Estilos para la animación de carga tipo barra */
+#loadingBar {
+    height: 20px; /* Altura de la barra de carga */
+    background-color: #4CAF50; /* Color verde de la barra de carga */
+    width: 0; /* Inicialmente no visible, luego se llenará */
+    transition: width 2s ease-in-out; /* Transición para llenar la barra con efecto suave */
+}
